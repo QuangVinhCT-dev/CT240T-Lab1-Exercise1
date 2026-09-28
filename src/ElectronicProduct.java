@@ -1,22 +1,52 @@
-public class ElectronicProduct extends Product implements Discountable {
-    private static final double VAT = 0.10;
+
+import java.util.*;
+
+/**
+ * 
+ */
+public abstract class ElectronicProduct extends Product implements Discountable {
+
+    /**
+     * Default constructor
+     */
+    public ElectronicProduct() {
+    }
+
+    /**
+     * 
+     */
     private int warrantyMonths;
 
-    public ElectronicProduct(String id, String name, double price, int warrantyMonths) {
-        super(id, name, price);
-        this.warrantyMonths = warrantyMonths;
-    }
-
-    @Override
+    /**
+     * @return
+     */
     public double calculateFinalPrice() {
-        return getPrice() * (1 + VAT);
+        // TODO implement here
+        return 0.0d;
     }
 
-    @Override
+    /**
+     * @param percent 
+     * @return
+     */
     public void applyDiscount(double percent) {
-        setPrice(getPrice() * (1 - percent / 100));
+        // TODO implement here
+        return null;
     }
 
-    public int getWarrantyMonths() { return warrantyMonths; }
-    public void setWarrantyMonths(int w) { this.warrantyMonths = w; }
+    /**
+     * @return
+     */
+    public int getWarrantyMonths() {
+        // TODO implement here
+        return 0;
+    }
+
+    /**
+     * 
+     */
+    public void applyDiscount(percent: double): void() {
+        // TODO implement here
+    }
+
 }

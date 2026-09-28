@@ -1,27 +1,55 @@
-import java.util.ArrayList;
-import java.util.List;
 
-public class ProductInventory {
-    private final List<Product> products = new ArrayList<>();
+import java.util.*;
 
-    public void addProduct(Product p) { products.add(p); }
+/**
+ * 
+ */
+public abstract class ProductInventory {
 
+    /**
+     * Default constructor
+     */
+    public ProductInventory() {
+    }
+
+    /**
+     * 
+     */
+    private List<Product> products;
+
+    /**
+     * @param p 
+     * @return
+     */
+    public void addProduct(Product p) {
+        // TODO implement here
+        return null;
+    }
+
+    /**
+     * @param id 
+     * @return
+     */
     public boolean removeProduct(String id) {
-        return products.removeIf(p -> p.getId().equals(id));
+        // TODO implement here
+        return false;
     }
 
+    /**
+     * @param keyword 
+     * @return
+     */
     public List<Product> findByName(String keyword) {
-        List<Product> result = new ArrayList<>();
-        for (Product p : products) {
-            if (p.getName().toLowerCase().contains(keyword.toLowerCase()))
-                result.add(p);
-        }
-        return result;
+        // TODO implement here
+        return null;
     }
 
+    /**
+     * @return
+     */
     public double getTotalValue() {
-        double total = 0;
-        for (Product p : products) total += p.calculateFinalPrice();
-        return total;
+        // TODO implement here
+        return 0.0d;
     }
+
 }

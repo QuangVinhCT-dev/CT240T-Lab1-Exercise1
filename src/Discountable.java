@@ -1,3 +1,14 @@
+
+import java.util.*;
+
+/**
+ * 
+ */
 public interface Discountable {
-    void applyDiscount(double percent);
+
+    /**
+     * 
+     */
+    public void applyDiscount(percent: double): void();
+
 }

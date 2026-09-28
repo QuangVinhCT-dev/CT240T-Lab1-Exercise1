@@ -1,20 +1,71 @@
-public abstract class Product {
-    private String id;
-    private String name;
-    private double price;
 
-    public Product(String id, String name, double price) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
+import java.util.*;
+
+/**
+ * 
+ */
+public abstract class Product {
+
+    /**
+     * Default constructor
+     */
+    public Product() {
     }
 
-    public abstract double calculateFinalPrice();
+    /**
+     * 
+     */
+    private String id;
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public double getPrice() { return price; }
-    public void setPrice(double price) { this.price = price; }
+    /**
+     * 
+     */
+    private String name;
+
+    /**
+     * 
+     */
+    private double Price;
+
+    /**
+     * @return
+     */
+    public double calculateFinalPrice() {
+        // TODO implement here
+        return 0.0d;
+    }
+
+    /**
+     * @return
+     */
+    public String getID() {
+        // TODO implement here
+        return "";
+    }
+
+    /**
+     * @return
+     */
+    public String getName() {
+        // TODO implement here
+        return "";
+    }
+
+    /**
+     * @return
+     */
+    public double getPrice() {
+        // TODO implement here
+        return 0.0d;
+    }
+
+    /**
+     * @param price 
+     * @return
+     */
+    public void setPrice(double price) {
+        // TODO implement here
+        return null;
+    }
+
 }
